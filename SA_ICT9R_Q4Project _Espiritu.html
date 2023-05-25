@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Castoro+Titling&family=Chivo+Mono:ital,wght@1,100&family=Delicious+Handrawn&family=EB+Garamond&family=Gloock&family=IBM+Plex+Serif:ital,wght@1,200&family=Inconsolata&family=Indie+Flower&family=Instrument+Serif&family=Martian+Mono:wght@300&family=Oswald&family=Pangolin&family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto+Mono:ital@1&family=Shadows+Into+Light&family=Shantell+Sans:wght@300&family=Unbounded:wght@300&family=Vidaloka&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Castoro+Titling&family=Chivo+Mono:ital,wght@1,100&family=Delicious+Handrawn&family=EB+Garamond&family=Gloock&family=IBM+Plex+Serif:ital,wght@1,200&family=Inconsolata&family=Indie+Flower&family=Instrument+Serif&family=Martian+Mono:wght@300&family=Oswald&family=Pangolin&family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto+Mono:ital@1&family=Shadows+Into+Light&family=Shantell+Sans:wght@300&family=Unbounded:wght@300&family=Vidaloka&display=swap" rel="stylesheet">
+	<title>Q4 | Project</title>
+
+<style>
+body {
+	background-color: ghostwhite;
+	text-align: center;
+}
+
+p {
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 20px;
+	font-family: 'Shadows Into Light', cursive;
+
+}
+
+
+ h1{
+ 	text-align: center;
+ 	font-size: 50px;
+ 	font-family: 'Pangolin', cursive;
+ }
+
+#Heart1{
+	background-color: ghostwhite;
+	font-family: 'Pangolin', cursive;
+}
+
+
+.container {
+	text-align: center;
+	background-color: #e0218a;
+	color: ghostwhite;
+	margin: auto;
+	padding: 25px;
+	max-width: 900px;
+	border-radius: 95px;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.20);
+}
+
+input[type="number"] {
+	text-align: center;
+	font-size: 20px;
+	width: 95%;
+	margin: auto;
+	margin-bottom: 25px;
+	padding: 15px;
+	border: 3px solid ghostwhite;
+	border-radius: 8px;
+}
+
+
+
+button[type="submit"] {
+	text-align: center;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 19px;
+	margin: 6px auto;
+	padding: 15px 25px;
+	background-color: #FFB4ED;
+	color: ghostwhite;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #FFB4ED;
+}
+
+span {
+	color: #FFB4ED;
+	font-weight: bold;
+}
+
+</style>
+
+
+</head>
+
+	<div class="container text-center">
+		<h1>Barbie Length Converter</h1>
+		<p id="today"></p>
+		<div class="container">
+			<br>
+			<p>Input Measurement</p>
+			<input type="number" name="input1" id="input1" placeholder="Input Milimeters">
+			<br>
+			<p>Calculated Output</p>
+			<input type="number" name="input2" id="input2" placeholder="output">
+	</div>
+	<div>
+			<br>
+			<p>Metric Unit Converters</p>
+			<div class="button-container">
+				<button type="submit" onclick="convertLengtha(event)">Centimeters</button>
+				<button type="submit" onclick="convertLengthb(event)">Meters</button>
+				<button type="submit" onclick="convertLengthc(event)">Kilometers</button>		
+			</div>	
+	</div>
+
+<script>
+function convertLengtha(event) {
+  event.preventDefault();
+  let input1 = document.getElementById("input1").value;
+  let answer1 = input1 / 10;
+  document.getElementById("input2").value = answer1;
+}
+
+function convertLengthb(event) {
+  event.preventDefault();
+  let input1 = document.getElementById("input1").value;
+  let answer1 = input1 / 100;
+  document.getElementById("input2").value = answer1;
+}
+
+function convertLengthc(event) {
+  event.preventDefault();
+  let input1 = document.getElementById("input1").value;
+  let answer1 = input1 / 10000;
+  document.getElementById("input2").value = answer1;
+}
+
+</script>
+
+</body>
+</html>
